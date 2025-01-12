@@ -4,7 +4,7 @@
 
 Verifiability is a foundational requirement for AI agents operating within decentralized and trustless environments. Ensuring that the actions, states, and logs of AI agents can be validated not only enhances their trustworthiness but also establishes them as credible participants in Web3 ecosystems. This document outlines the essential verifiable features for AI agents and provides a roadmap for achieving robust verifiability.
 
-![img1.png](./Feat_Verifiable_log/img1.png)
+![img1.png](./Feat_Verifiable_Log/img1.png)
 
 
 
