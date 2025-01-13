@@ -107,6 +107,28 @@ Infrastructure is not within the scope of focEliza's implementation. However, fo
 
 
 
+### focEliza RFC v1 Progess
+
+| Scope                                 | Sub-Scope       | Progress    | Memo       |
+| ------------------------------------- | --------------- | ----------- | -------------------- |
+| Verifiability                         | TEE Execution Environment | ♻️ No build required | Relies on dstack and ElizaOS's TEE plugin |
+|                          | Verifiable Logs | ✅ Completed |  |
+|                          | Verifiable States | 🚧 In Development |  |
+|                          | zk Components | 🚧 In Development |  |
+| Decentralized Operations              | Host Migration   | 🚧 In Development |  |
+|               | On-chain DA   | ✅ Completed |  |
+|               | On-chain State  | ✏️ In Design |  |
+| On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design |  |
+|            | Trustless Collaboration   | ✏️ In Design |  |
+| On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | ✏️ In Design |  |
+|     | Digital Life Concept  | 🚧 In Development |  |
+| On-Chain Functional Components        | AI Agent Security   | ✅ Completed |  |
+|         | Scalable On-Chain Interactions   | 🚧 In Development |                                           |
+|         | Omni-Chain Data Access   | ✅ Completed |  |
+| Infrastructure for On-Chain AI Agents | \  | In Progress |  |
+
+
+
 ## focEliza RFC Structure
 
 ```plaintext
@@ -123,10 +145,15 @@ focElizaRFC/
 
 
 
+
 ## How to Contribute
 
 1. Submit articles related to the concept in the "Discussion" directory. These can be Twitter threads or blog posts.
 2. Submit plugin designs in the "Implementation" directory. These should include technical overviews and a branch or PR with the technical implementation.
 3. Revise the content of concept files.
 4. Revise the content of high-level design files.
+
+
+
+### Contributors
 
