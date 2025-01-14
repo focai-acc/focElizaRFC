@@ -11,7 +11,7 @@ We believe that autonomous AI agents will inevitably integrate deeply with block
 
 However, the relationship between AI agents and blockchain remains limited to AI agents calling dApp functionalities, rather than leveraging blockchain’s decentralized primitives to enhance the autonomy of AI agents and fundamentally transform their nature. Thus, the focEliza project is dedicated to achieving deep integration between blockchain and ElizaOS, creating decentralized AI agents and accelerating the advent of autonomous AI agents.
 
-
+![img](img2.png)
 
 ## focEliza Design Principles
 
@@ -34,12 +34,18 @@ Verifiability is the foundation of decentralized applications. Without verifiabl
 
 AI agents will drive advancements in verifiable computation, with TEE being the most viable short-term solution. Previously, TEE was used in specific blockchain components, such as the MEV execution environment of Flashbots. Now, it will become the preferred execution environment for AI agents. Designing TEE components tailored to AI agents will enhance their verifiability, establishing the foundation for trustless collaboration.
 
+
+
 V1 will explore the following concepts:
 
-- **TEE Execution Environment**: AI agents will operate within a TEE environment to achieve initial verifiability.
+- **TEE**: AI agents will operate within a TEE environment to achieve codebase verifiability.
 - **Verifiable Logs**: Every action performed by the AI agent will be signed and stored as verifiable logs, allowing third parties to understand what the AI agent has executed.
 - **Verifiable States**: The AI agent's operational state will be verifiable by third parties, similar to the world state of a smart contract, enabling visibility into assets, smart contracts, or other data controlled by the AI agent.
 - **zk Components**: Introducing components like zkTLS to enhance the verifiability of AI agents and address certain limitations of TEE environments.
+
+
+
+With these functionalities implemented, AI agents will achieve a level of verifiability similar to that of smart contracts. External parties will be able to verify the code version it runs (equivalent to code hash in smart contracts), execution logs (equivalent to receipts in smart contracts), runtime state (equivalent to the world state in smart contracts), and trusted interactions with external entities (equivalent to verifying off-chain data in smart contracts).
 
 
 
@@ -49,11 +55,15 @@ AI agents can operate like smart contracts, free from control by any single enti
 
 Smart contracts operate in a decentralized manner, without a single entity capable of shutting them down, enabling decentralized applications like fund management and DeFi. For autonomous AI agents managing significant user funds, the presence of a single administrator able to disable them centralizes the funds. By combining TEE and blockchain, autonomous AI agents can operate in a decentralized manner, becoming trustless entities capable of holding funds and executing tasks without administrator intervention, governed solely by their code.
 
+
+
 V1 will explore the following concepts:  
 
 - **Host Migration**: AI agents are not restricted to a single host machine. When taken offline, they can recover their data on another machine within the network and resume operations seamlessly.
 - **On-chain DA**: AI agent data is stored on a decentralized network, enabling recovery from the network even if the execution server is banned.  
 - **On-chain State**: The operational state of the AI agent is managed through smart contracts, allowing it to achieve autonomy in the form of a DAO instead of being controlled by a single administrator.  
+
+
 
 
 
