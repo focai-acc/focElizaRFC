@@ -49,7 +49,7 @@ With these functionalities implemented, AI agents will achieve a level of verifi
 
 
 
-### 2. Decentralized Operations
+### 2. Decentralized Runtime
 
 AI agents can operate like smart contracts, free from control by any single entity and governed by decentralized rules.
 
@@ -65,6 +65,8 @@ V1 will explore the following concepts:
 
 
 
+With these functionalities implemented, AI agents will have a decentralized runtime similar to smart contracts or rollups. When combined with modular blockchains, they can leverage different data availability solutions to achieve rollup-like functionality. If a centralized execution environment encounters issues, the system can migrate and resume execution from the blockchain.
+
 
 
 ### 3. On-Chain Identity and Swarm
@@ -73,24 +75,37 @@ In the future, the era of multi-AI agents will require protocols for identity re
 
 If on-chain AI agent interactions rely on centralized entities, trustless mutual authentication between agents will be impossible, hindering decentralized use cases. This is particularly important as economic networks emerge among AI agents.
 
+
+
 V1 will explore the following two concepts:  
 
 - **Decentralized Identity**: AI agents obtain a verifiable identity through blockchain or decentralized identity protocols, which serves as the foundation for trustless collaboration.  
 
 - **Trustless Collaboration**: Based on blockchain or smart contract rules, multiple AI agents can collaborate without the need for mutual trust. For instance, they can complete task allocation, resource sharing, or result verification via on-chain protocols, without worrying about any party cheating.  
 
-  
+
+
+
+With these functionalities implemented, AI agents can engage in trustless communication and collaboration with each other and the external world, leveraging Web3 features like stablecoins and DAOs to establish a small economic ecosystem for AI agents.
+
+
 
 ### 4. On-Chain Autonomy and Digital Life
 Currently, AI agent autonomy is defined by their ability to independently plan and execute tasks, making them intelligent robots rather than intelligent "life forms."
 
 On-chain autonomy and digital life are not mainstream demands but cater primarily to gaming and metaverse applications. NFTs define eternal on-chain metadata, FOCG establishes decentralized game rules, and metaverse infrastructure enables rendering and experiences. AI agents bridge these gaps by bringing dynamic capabilities to NFTs, decentralized entities to FOCG, and spatial programs to the metaverse.
 
+
+
 V1 will explore the following two concepts:  
 
 * **Decentralized Autonomy:** Refers to the ability of a system or entity to independently make decisions and execute them without being controlled by a single centralized authority. Instead, autonomy is achieved through consensus mechanisms or smart contract rules, enabling the system to function in a self-governing manner.
 
 * **Digital Life Concept:** Refers to the continuous and self-evolving manifestation of "life" or "existence" characteristics in the digital/virtual world. For example, it involves enabling AI or digital characters to possess long-lasting identities, experiences, and evolutionary mechanisms, granting them a sense of continuity and growth similar to that of real-life entities.
+
+
+
+With these functionalities implemented, on-chain AI agents will have practical applications in on-chain games, the metaverse, and NFT derivatives. Gaming and entertainment are likely to be the first areas where AI agents achieve widespread adoption.
 
 
 
