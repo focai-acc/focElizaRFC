@@ -119,9 +119,13 @@ V1 will explore the following components:
 
 * **AI Agent Security**: Security becomes critical when AI agents manage assets or interact with DeFi protocols. Full-lifecycle security components must be introduced to ensure the safety of AI agent operations.  
 
-* **Scalable On-Chain Interactions**: Currently, Eliza's on-chain interactions are not scalable, as each chain and dApp requires a pre-defined interaction plugin. V1 will explore the use of open ABI technologies to enable scalable and pre-definition-free interaction mechanisms.  
+* **Extensible On-Chain Interactions**: Currently, Eliza's on-chain interactions are not scalable, as each chain and dApp requires a pre-defined interaction plugin. V1 will explore the use of open ABI technologies to enable scalable and pre-definition-free interaction mechanisms.  
 
 * **Omni-Chain Data Access**: Eliza's current on-chain data access is limited by pre-defined data access components for each chain. By leveraging omni-chain data components, AI agents will gain unrestricted and flexible access to blockchain data.  
+
+
+
+With these functionalities, AI agents can interact with the blockchain without requiring pre-defined code modules, fully leveraging the capabilities of LLMs and code interpreters to enable more flexible, secure, and practical on-chain interactions.
 
 
 
