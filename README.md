@@ -16,7 +16,7 @@ However, the relationship between AI agents and blockchain remains limited to AI
 ## focEliza Design Principles
 
 - **Modularity:** focEliza components are standalone and composable, as not all AI agents need to be fully decentralized; they may only require solutions for specific problems.
-- **Extensibility:** Interfaces take priority over implementations to support multiple blockchains and infrastructures, catering to the diverse needs of AI agents.
+- **Extensibility:** Applying the design principle of Interface over Implementation, enables support for multiple blockchains and infrastructures, ensuring adaptability to meet the diverse requirements of AI agents.
 - **Openness:** Different versions can be proposed for the same concept or functionality, with minor variations allowed. This acknowledges the inherent diversity of solutions.
 
 
