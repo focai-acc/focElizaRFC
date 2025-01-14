@@ -77,7 +77,7 @@ If on-chain AI agent interactions rely on centralized entities, trustless mutual
 
 
 
-V1 will explore the following two concepts:  
+V1 will explore the following concepts:  
 
 - **Decentralized Identity**: AI agents obtain a verifiable identity through blockchain or decentralized identity protocols, which serves as the foundation for trustless collaboration.  
 
@@ -109,13 +109,15 @@ With these functionalities implemented, on-chain AI agents will have practical a
 
 
 
-### 5. On-Chain Functional Components
+### 5. On-Chain Components & Infra
 
-AI agents need functional components for practical blockchain interactions to move beyond toys and achieve industrial application.
+AI agents need functional components and infrastructure for practical blockchain interactions to move beyond toys and achieve industrial application.
 
-These components include on-chain security, flexible data access, and dynamic blockchain interaction, enabling practical use cases for on-chain Eliza.
+These components include on-chain security, flexible data access, and dynamic blockchain interaction, enabling practical use cases for on-chain Eliza. Existing infrastructure may not fully meet the needs of on-chain AI agents, such as performance (AI agents operate at higher frequencies than humans) and customization (e.g., more complex on-chain verification mechanisms or extended on-chain functionality). Infrastructure is not within the scope of focEliza's implementation. However, focEliza will establish partnerships with relevant infrastructure providers to promote customized adaptations for focEliza, such as the Artela network, Allora network, and others.
 
-V1 will explore the following components:
+
+
+V1 will explore the following concepts:
 
 * **AI Agent Security**: Security becomes critical when AI agents manage assets or interact with DeFi protocols. Full-lifecycle security components must be introduced to ensure the safety of AI agent operations.  
 
@@ -129,32 +131,25 @@ With these functionalities, AI agents can interact with the blockchain without r
 
 
 
-### 6. Infrastructure for On-Chain AI Agents
-Existing infrastructure may not fully meet the needs of on-chain AI agents, such as performance (AI agents operate at higher frequencies than humans) and customization (e.g., more complex on-chain verification mechanisms or extended on-chain functionality).
-
-Infrastructure is not within the scope of focEliza's implementation. However, focEliza will establish partnerships with relevant infrastructure providers to promote customized adaptations for focEliza, such as the Artela network, Allora network, and others.
-
-
-
 ### focEliza RFC v1 Progess
 
 | Scope                                 | Sub-Scope       | Progress    | Memo       |
 | ------------------------------------- | --------------- | ----------- | -------------------- |
 | Verifiability                         | TEE Execution Environment | ♻️ No build required | Relies on dstack and ElizaOS's TEE plugin |
-|                          | Verifiable Logs | ✅ Completed |  |
+|                          | Verifiable Logs | ✅ Completed | Contributed by Artela network |
 |                          | Verifiable States | 🚧 In Development |  |
-|                          | zk Components | 🚧 In Development |  |
-| Decentralized Operations              | Host Migration   | 🚧 In Development |  |
+|                          | zk Components | 🚧 In Development | Contributed by  Primus Labs |
+| Decentralized Runtime              | Host Migration   | 🚧 In Development |  |
 |               | On-chain DA   | ✅ Completed |  |
-|               | On-chain State  | ✏️ In Design |  |
+|               | On-chain State  | 🚧 In Development | Contributed by  Rooch network |
 | On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design |  |
 |            | Trustless Collaboration   | ✏️ In Design |  |
-| On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | ✏️ In Design |  |
-|     | Digital Life Concept  | 🚧 In Development |  |
-| On-Chain Functional Components        | AI Agent Security   | ✅ Completed |  |
-|         | Scalable On-Chain Interactions   | 🚧 In Development |                                           |
-|         | Omni-Chain Data Access   | ✅ Completed |  |
-| Infrastructure for On-Chain AI Agents | \  | In Progress |  |
+| On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
+|     | Digital Life Concept  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
+| On-Chain Components & Infra | AI Agent Security   | ✅ Completed | Contributed by GoPlus security |
+|         | Scalable On-Chain Interactions   | 🚧 In Development | Contributed by Termix |
+|         | Omni-Chain Data Access   | ✅ Completed | Contributed by Chainbase |
+|  | Customizable L1/L2 | In Progress | Contributed by Artela network |
 
 
 
@@ -185,4 +180,8 @@ focElizaRFC/
 
 
 ### Contributors
+
+Developers: Collecting...
+
+Partners: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Primus Labs, Rooch Network, Termix.
 
