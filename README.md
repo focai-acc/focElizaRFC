@@ -1,7 +1,7 @@
 
 # focEliza RFC
 
-**focEliza Request for Comments (RFC)** is a collection of concepts, protocols, programs, and standards related to Fully On-Chain ElizaOS. RFCs encourage developers, researchers, and the community to engage in discussions and propose improvements, aiming to establish widely applicable on-chain components for ElizaOS.
+**focEliza Request for Comments (RFC)** is a collection of concepts, component designs, protocols, and standards related to Fully On-Chain ElizaOS. RFCs encourage developers, researchers, and the community to engage in discussions and propose improvements, aiming to establish widely applicable on-chain components for ElizaOS.
 
 
 
@@ -23,22 +23,25 @@ However, the relationship between AI agents and blockchain remains limited to AI
 
 ## Scope of focEliza RFC v1
 
-The focEliza RFC v1 will accelerate the on-chain progress of ElizaOS AI agents from the following six aspects:
+The focEliza RFC v1 will accelerate the on-chain progress of ElizaOS AI agents from the following five aspects:
 
 ![img](img1.png)
 
 
 
 ### 1. Verifiability
-Verifiability is the foundation of decentralized applications. Without verifiable computation, decentralization is meaningless. AI agent verifiability is critical for trustless collaboration with other agents or users.
 
-AI agents will drive advancements in verifiable computation, with TEE being the most viable short-term solution. Previously, TEE was used in specific blockchain components, such as the MEV execution environment of Flashbots. Now, it will become the preferred execution environment for AI agents. Designing TEE components tailored to AI agents will enhance their verifiability, establishing the foundation for trustless collaboration.
+In this document, **verifiability of AI Agents** refers to the ability of participants (including users, developers, or other agents) to verify the autonomous behaviors, decision-making processes, and execution outcomes of AI agents, as well as to ensure that they operate in compliance with predefined rules and protocols. This capability is fundamental to establishing trust, accountability, and reliability in interactions involving AI agents.
+
+To achieve verifiability, verifiable computation technology is required. Although verifiable computation is not yet fully mature, TEE currently serves as the most effective short-term solution. Some of its functionalities can also complement and enhance technologies like zk and MPC. TEE has been used in specific blockchain components, such as the MEV execution environment in Flashbots. RFC V1 will adopt this practical and widely accepted approach.
+
+The verifiability of the AI agent framework itself is a key focus of V1 exploration. However, the verifiability of LLMs is a more in-depth topic and is currently outside the scope of V1 exploration.
 
 
 
-V1 will explore the following concepts:
+**V1 will explore the following features:**
 
-- **TEE**: AI agents will operate within a TEE environment to achieve codebase verifiability.
+- **Verifiable Codebase**: AI agents will operate within a TEE environment to achieve codebase verifiability.
 - **Verifiable Logs**: Every action performed by the AI agent will be signed and stored as verifiable logs, allowing third parties to understand what the AI agent has executed.
 - **Verifiable States**: The AI agent's operational state will be verifiable by third parties, similar to the world state of a smart contract, enabling visibility into assets, smart contracts, or other data controlled by the AI agent.
 - **zk Components**: Introducing components like zkTLS to enhance the verifiability of AI agents and address certain limitations of TEE environments.
@@ -49,15 +52,17 @@ With these functionalities implemented, AI agents will achieve a level of verifi
 
 
 
-### 2. Decentralized Runtime
+### 2. Decentralized Execution
 
-AI agents can operate like smart contracts, free from control by any single entity and governed by decentralized rules.
+Decentralized execution of AI agents refers to the ability of AI agents to operate and execute their functions across a distributed network without reliance on centralized control or a single point of failure. This execution is achieved by leveraging blockchain to ensure autonomy, transparency, and trustworthiness in the agent's operations.
 
-Smart contracts operate in a decentralized manner, without a single entity capable of shutting them down, enabling decentralized applications like fund management and DeFi. For autonomous AI agents managing significant user funds, the presence of a single administrator able to disable them centralizes the funds. By combining TEE and blockchain, autonomous AI agents can operate in a decentralized manner, becoming trustless entities capable of holding funds and executing tasks without administrator intervention, governed solely by their code.
+Further understanding of Decentralized Execution: AI agents can operate like smart contracts, free from control by any single entity and governed by decentralized rules. Smart contracts execute in a decentralized manner, without any single entity being able to shut them down, enabling decentralized applications such as fund management and DeFi. For autonomous AI agents managing significant user funds, this characteristic is particularly crucial for their applications in Web3.
+
+V1 will explore a technical implementation that deeply integrates TEE with blockchain. TEE will provide the execution environment for AI agents, while blockchain will address data availability, governance, and ensure the liveness of AI agents.
 
 
 
-V1 will explore the following concepts:  
+**V1 will explore the following features:**  
 
 - **Host Migration**: AI agents are not restricted to a single host machine. When taken offline, they can recover their data on another machine within the network and resume operations seamlessly.
 - **On-chain DA**: AI agent data is stored on a decentralized network, enabling recovery from the network even if the execution server is banned.  
@@ -71,9 +76,11 @@ With these functionalities implemented, AI agents will have a decentralized runt
 
 ### 3. On-Chain Identity and Swarm
 
-In the future, the era of multi-AI agents will require protocols for identity registration, discovery, and collaboration as foundational elements of inter-agent cooperation.
+On-Chain Identity and Swarm refers to AI agents possessing verifiable decentralized identities, enabling trustless verification, workflow collaboration, and fee settlement among AI agents based on blockchain technology.
 
-If on-chain AI agent interactions rely on centralized entities, trustless mutual authentication between agents will be impossible, hindering decentralized use cases. This is particularly important as economic networks emerge among AI agents.
+AI agents can fully leverage Web3's identity systems, programmable contracts, payment protocol, and DeFi ecosystem to enable autonomous collaboration. These foundational capabilities are not effectively available for AI agents in the Web2 world.
+
+The technical implementation of V1 will primarily focus on extending and combining existing Web3 protocols, adding features tailored for AI agents, and utilizing smart contracts to establish trustable workflows.
 
 
 
@@ -85,15 +92,14 @@ V1 will explore the following concepts:
 
 
 
-
 With these functionalities implemented, AI agents can engage in trustless communication and collaboration with each other and the external world, leveraging Web3 features like stablecoins and DAOs to establish a small economic ecosystem for AI agents.
 
 
 
 ### 4. On-Chain Autonomy and Digital Life
-Currently, AI agent autonomy is defined by their ability to independently plan and execute tasks, making them intelligent robots rather than intelligent "life forms."
+On-Chain Autonomy and Digital Life refers to AI agents achieving autonomy by adhering to the immutable rules and principles defined on the blockchain's virtual world, while evolving their characters, personalities, and other life-like characteristics within the predetermined settings of the metaverse.
 
-On-chain autonomy and digital life are not mainstream demands but cater primarily to gaming and metaverse applications. NFTs define eternal on-chain metadata, FOCG establishes decentralized game rules, and metaverse infrastructure enables rendering and experiences. AI agents bridge these gaps by bringing dynamic capabilities to NFTs, decentralized entities to FOCG, and spatial programs to the metaverse.
+Currently, AI agent autonomy is defined by their ability to independently plan and execute tasks, making them intelligent robots rather than intelligent "life forms." On-chain autonomy and digital life are not mainstream demands but cater primarily to gaming and metaverse applications. NFTs define eternal on-chain metadata, FOCG establishes decentralized game rules, and metaverse infrastructure enables rendering and experiences. AI agents bridge these gaps by bringing dynamic capabilities to NFTs, decentralized entities to FOCG, and spatial programs to the metaverse.
 
 
 
@@ -101,7 +107,7 @@ V1 will explore the following two concepts:
 
 * **Decentralized Autonomy:** Refers to the ability of a system or entity to independently make decisions and execute them without being controlled by a single centralized authority. Instead, autonomy is achieved through consensus mechanisms or smart contract rules, enabling the system to function in a self-governing manner.
 
-* **Digital Life Concept:** Refers to the continuous and self-evolving manifestation of "life" or "existence" characteristics in the digital/virtual world. For example, it involves enabling AI or digital characters to possess long-lasting identities, experiences, and evolutionary mechanisms, granting them a sense of continuity and growth similar to that of real-life entities.
+* **Digital Life Component:** Refers to the continuous and self-evolving manifestation of "life" or "existence" characteristics in the digital/virtual world. For example, it involves enabling AI or digital characters to possess long-lasting identities, experiences, and evolutionary mechanisms, granting them a sense of continuity and growth similar to that of real-life entities.
 
 
 
@@ -123,7 +129,9 @@ V1 will explore the following concepts:
 
 * **Extensible On-Chain Interactions**: Currently, Eliza's on-chain interactions are not scalable, as each chain and dApp requires a pre-defined interaction plugin. V1 will explore the use of open ABI technologies to enable scalable and pre-definition-free interaction mechanisms.  
 
-* **Omni-Chain Data Access**: Eliza's current on-chain data access is limited by pre-defined data access components for each chain. By leveraging omni-chain data components, AI agents will gain unrestricted and flexible access to blockchain data.  
+* **Omni-Chain Data Access**: Eliza's current on-chain data access is limited by pre-defined data access components for each chain. By leveraging omni-chain data components, AI agents will gain unrestricted and flexible access to blockchain data. 
+
+* **Customized infrastructure for AI agents**: Collaborating with extensible infrastructure to seek functionality customization better suited to the specific requirements of AI agents.
 
 
 
@@ -135,11 +143,11 @@ With these functionalities, AI agents can interact with the blockchain without r
 
 | Scope                                 | Sub-Scope       | Progress    | Memo       |
 | ------------------------------------- | --------------- | ----------- | -------------------- |
-| Verifiability                         | TEE Execution Environment | ♻️ No build required | Relies on dstack and ElizaOS's TEE plugin |
+| Verifiability                         | TEE Execution Environment | ♻️ No build required | Relies on dstack, Phala network and ElizaOS's TEE plugin |
 |                          | Verifiable Logs | ✅ Completed | Contributed by Artela network |
 |                          | Verifiable States | 🚧 In Development |  |
 |                          | zk Components | 🚧 In Development | Contributed by  Primus Labs |
-| Decentralized Runtime              | Host Migration   | 🚧 In Development |  |
+| Decentralized Execution            | Host Migration   | 🚧 In Development |  |
 |               | On-chain DA   | ✅ Completed |  |
 |               | On-chain State  | 🚧 In Development | Contributed by  Rooch network |
 | On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design |  |
@@ -169,19 +177,38 @@ focElizaRFC/
 
 
 
+## focEliza Peripheral
+
+The focEliza RFC currently focuses on designing the core framework. Surrounding the focEliza framework, the following peripheral tools and services might be developed. If they gain widespread adoption, they could be included in the roadmap for the next version:
+
+1) **On-chain AI Agents Browser Tools:** Verifiability requires a series of user-friendly UI/UX solutions. focEliza is expected to drive the development of such tools, with the most popular one potentially becoming the de facto standard.
+
+2) **Platform for On-chain AI Agents:** On-chain AI agents need a service that integrates blockchain, TEE platforms, and other services, providing one-click operation for on-chain AI agents. The most popular platform may inspire the creation of new protocols.
+
+
+
+## Miscellaneous
+
+1) **Can these components be used outside the ElizaOS framework?**  
+  Possibly, but in the near term, the focus will remain on ElizaOS. This is because the AI agent framework has not yet established a standard, and the technology stacks vary. In the short term, focEliza will concentrate on integration with ElizaOS.
+
+2) **Is focEliza a fork of ElizaOS?**  
+  No. focEliza is an extension suite of ElizaOS (including plugins, tools, and services). It is fully compatible with ElizaOS, and AI agents based on ElizaOS can enable focEliza features.
+
+
+
 
 ## How to Contribute
 
 1. Submit articles related to the concept in the "Discussion" directory. These can be Twitter threads or blog posts.
 2. Submit plugin designs in the "Implementation" directory. These should include technical overviews and a branch or PR with the technical implementation.
 3. Revise the content of concept files.
-4. Revise the content of high-level design files.
+4. Revise the content of specs files.
 
 
 
 ### Contributors
 
-Developers: Collecting...
+* **Projects**: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Primus Labs, Rooch Network, Termix.
 
-Partners: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Primus Labs, Rooch Network, Termix.
-
+* **Developers:** Not yet counted. Contributions will be based on the actual contributors listed in all repositories under the `focai-acc` organization on GitHub.
