@@ -209,6 +209,6 @@ The focEliza RFC currently focuses on designing the core framework. Surrounding 
 
 ### Contributors
 
-* **Projects**: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Primus Labs, Rooch Network, Termix.
+* **Projects**: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Phala network, Primus Labs, Rooch Network, Termix.
 
 * **Developers:** Not yet counted. Contributions will be based on the actual contributors listed in all repositories under the `focai-acc` organization on GitHub.
