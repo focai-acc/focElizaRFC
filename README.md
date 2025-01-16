@@ -139,6 +139,16 @@ With these functionalities, AI agents can interact with the blockchain without r
 
 
 
+## focEliza Peripheral
+
+The focEliza RFC currently focuses on designing the core framework. Surrounding the focEliza framework, the following peripheral tools and services might be developed. If they gain widespread adoption, they could be included in the roadmap for the next version:
+
+1) **On-chain AI Agents Browser Tools:** Verifiability requires a series of user-friendly UI/UX solutions. focEliza is expected to drive the development of such tools, with the most popular one potentially becoming the de facto standard.
+
+2) **Platform for On-chain AI Agents:** On-chain AI agents need a service that integrates blockchain, TEE platforms, and other services, providing one-click operation for on-chain AI agents. The most popular platform may inspire the creation of new protocols.
+
+
+
 ### focEliza RFC v1 Progess
 
 | Scope                                 | Sub-Scope       | Progress    | Memo       |
@@ -163,6 +173,8 @@ With these functionalities, AI agents can interact with the blockchain without r
 
 ## focEliza RFC Structure
 
+
+
 ```plaintext
 focElizaRFC/
 ├── 01Verifiability/
@@ -177,23 +189,13 @@ focElizaRFC/
 
 
 
-## focEliza Peripheral
-
-The focEliza RFC currently focuses on designing the core framework. Surrounding the focEliza framework, the following peripheral tools and services might be developed. If they gain widespread adoption, they could be included in the roadmap for the next version:
-
-1) **On-chain AI Agents Browser Tools:** Verifiability requires a series of user-friendly UI/UX solutions. focEliza is expected to drive the development of such tools, with the most popular one potentially becoming the de facto standard.
-
-2) **Platform for On-chain AI Agents:** On-chain AI agents need a service that integrates blockchain, TEE platforms, and other services, providing one-click operation for on-chain AI agents. The most popular platform may inspire the creation of new protocols.
-
-
-
 ## Miscellaneous
 
 1) **Can these components be used outside the ElizaOS framework?**  
-  Possibly, but in the near term, the focus will remain on ElizaOS. This is because the AI agent framework has not yet established a standard, and the technology stacks vary. In the short term, focEliza will concentrate on integration with ElizaOS.
+    Possibly, but in the near term, the focus will remain on ElizaOS. This is because the AI agent framework has not yet established a standard, and the technology stacks vary. In the short term, focEliza will concentrate on integration with ElizaOS.
 
 2) **Is focEliza a fork of ElizaOS?**  
-  No. focEliza is an extension suite of ElizaOS (including plugins, tools, and services). It is fully compatible with ElizaOS, and AI agents based on ElizaOS can enable focEliza features.
+    No. focEliza is an extension suite of ElizaOS (including plugins, tools, and services). It is fully compatible with ElizaOS, and AI agents based on ElizaOS can enable focEliza features.
 
 
 
