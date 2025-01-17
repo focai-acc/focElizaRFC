@@ -154,20 +154,20 @@ The focEliza RFC currently focuses on designing the core framework. Surrounding 
 | Scope                                 | Sub-Scope       | Progress    | Memo       |
 | ------------------------------------- | --------------- | ----------- | -------------------- |
 | Verifiability                         | TEE Execution Environment | ♻️ No build required | Relies on dstack, Phala network and ElizaOS's TEE plugin |
-|                          | Verifiable Logs | ✅ Completed | Contributed by Artela network |
+|                          | Verifiable Logs | ✅ Completed | Co-build with Artela network, phala network |
 |                          | Verifiable States | 🚧 In Development |  |
-|                          | zk Components | 🚧 In Development | Contributed by  Primus Labs |
+|                          | zk Components | 🚧 In Development | Co-build with  Primus Labs |
 | Decentralized Execution            | Host Migration   | 🚧 In Development |  |
 |               | On-chain DA   | ✅ Completed |  |
-|               | On-chain State  | 🚧 In Development | Contributed by  Rooch network |
-| On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design | Contributed by Trusta Labs |
-|            | Trustless Collaboration   | ✏️ In Design |  |
-| On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
-|     | Digital Life Concept  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
-| On-Chain Components & Infra | AI Agent Security   | ✅ Completed | Contributed by GoPlus security |
-|         | Scalable On-Chain Interactions   | 🚧 In Development | Contributed by Termix |
-|         | Omni-Chain Data Access   | ✅ Completed | Contributed by Chainbase |
-|  | Customizable L1/L2 | In Progress | Contributed by Artela network |
+|               | On-chain State  | 🚧 In Development | Co-build with  Rooch network |
+| On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design | Co-build with Trusta Labs |
+|            | Trustless Collaboration   | ✏️ In Design | Co-build with Trusta Labs, Matr1x |
+| On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | 🚧 In Development | Co-build with Adventure Layer, Cellula, Matr1x |
+|     | Digital Life Concept  | 🚧 In Development | Co-build with Adventure Layer, Cellula, Matr1x |
+| On-Chain Components & Infra | AI Agent Security   | ✅ Completed | Co-build with GoPlus security |
+|         | Scalable On-Chain Interactions   | 🚧 In Development | Co-build with Termix |
+|         | Omni-Chain Data Access   | ✅ Completed | Co-build with Chainbase |
+|  | Customizable L1/L2 | In Progress | Co-build with Artela network |
 
 
 
