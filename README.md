@@ -160,7 +160,7 @@ The focEliza RFC currently focuses on designing the core framework. Surrounding 
 | Decentralized Execution            | Host Migration   | 🚧 In Development |  |
 |               | On-chain DA   | ✅ Completed |  |
 |               | On-chain State  | 🚧 In Development | Contributed by  Rooch network |
-| On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design |  |
+| On-Chain Identity and Swarm           | Decentralized Identity   | ✏️ In Design | Contributed by Trusta Labs |
 |            | Trustless Collaboration   | ✏️ In Design |  |
 | On-Chain Autonomy and Digital Life    | Decentralized Autonomy  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
 |     | Digital Life Concept  | 🚧 In Development | Contributed by  Adventure Layer, Cellula, Matr1x |
@@ -211,6 +211,6 @@ focElizaRFC/
 
 ### Contributors
 
-* **Projects**: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Phala network, Primus Labs, Rooch Network, Termix.
+* **Projects**: Adventure Layer, Artela Network, Cellula, Chainbase, GoPlus Security, Matr1x, Phala network, Primus Labs, Rooch Network, Termix, Trusta Labs.
 
 * **Developers:** Not yet counted. Contributions will be based on the actual contributors listed in all repositories under the `focai-acc` organization on GitHub.
