@@ -1,5 +1,5 @@
 
-# focEliza RFC
+# focEliza RFC v1
 
 **focEliza Request for Comments (RFC)** is a collection of concepts, component designs, protocols, and standards related to Fully On-Chain ElizaOS. RFCs encourage developers, researchers, and the community to engage in discussions and propose improvements, aiming to establish widely applicable on-chain components for ElizaOS.
 
