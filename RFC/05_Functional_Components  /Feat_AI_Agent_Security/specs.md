@@ -1,91 +1,88 @@
-# Overview
+# 1. Overview
 
-The AI Agent Security plug-in for focEliza integrates GoPlus Security's decentralized protection services into the ElizaOS ecosystem. It equips AI agents with real-time security capabilities across 30+ blockchain networks, enhancing the safety and trustworthiness of on-chain interactions.
+The **GoPlus Security plugin** provides a comprehensive Web3 security solution designed to protect users across a wide range of blockchain networks. Built with a decentralized architecture, it is seamlessly integrated into the **FocEliza** ecosystem, enhancing the **ElizaOS** AI agent framework with cutting-edge, decentralized blockchain security. This plugin aims to enable AI agents to autonomously detect and mitigate risks during on-chain interactions, providing protection across transactions and various blockchain services.
 
-# Purpose and Scope
+# 2. Objectives
 
-## Purpose
+The GoPlus Security plugin for FocEliza has been developed with the following objectives:
+- Enable **AI agents** to automatically assess and respond to security risks on blockchain platforms.
+- Enhance **Web3 security** with a focus on token, contract, wallet, and website safety.
+- Integrate seamlessly into the **FocEliza plugin architecture**, utilizing GoPlus' extensive coverage of over 30 blockchain networks.
+- Provide critical **security features** for decentralized applications (dApps), community management, and user wallet protection.
 
-- Provide AI agents with robust, AI-powered security measures.
-- Detect and mitigate security risks throughout the transaction lifecycle.
-- Seamlessly integrate decentralized security services into the focEliza framework.
+# 3. Integration Points
 
-## Scope
+## 3.1 GoPlus Security API
 
-- **Platform**: focEliza plug-in for ElizaOS AI agents.
-- **Coverage**: Over 30 blockchain networks, including major EVM chains, Solana, and Sui.
-- **Services**: Token and NFT security detection, phishing protection, and risk assessment across various use cases.
+The GoPlus Security plugin integrates directly with the **GoPlus API**, which supports a range of security checks:
+- **Token Security Detection**: Identifies malicious or high-risk tokens.
+- **NFT Security Detection**: Analyzes NFT contracts and metadata for vulnerabilities.
+- **Phishing Website Detection**: Identifies phishing domains and unsafe websites.
+- **Authorization and Signature Security**: Verifies risky contract authorizations and signatures.
 
-# System Architecture and Integration
+Supported blockchains include **Ethereum, Solana, Sui**, and more.
 
-## Modular Design
+## 3.2 AI Agent Interaction
 
-- Developed as a standalone module that integrates directly into the focEliza branch of ElizaOS.
+The plugin enables **AI agents** to perform security checks as part of their operation. These security checks occur through an automated flow where the AI agent interacts with GoPlus API to:
+- **Analyze input data** (such as wallet addresses, contract addresses, and URLs).
+- **Determine risk levels** for assets and interactions.
+- **Provide recommendations** or actions to mitigate identified risks, such as revoking approvals or blocking malicious interactions.
 
-## APIs and Interfaces
+# 4. Core Functionalities
 
-- Provides RESTful APIs and WebSocket interfaces for real-time communication and threat updates.
+## 4.1 Token Security Checks
+- **Action**: [EVMTOKEN_SECURITY_CHECK], [SOLTOKEN_SECURITY_CHECK], [SUITOKEN_SECURITY_CHECK]
+- **Description**: The plugin can automatically assess the security of tokens based on their blockchain network. This includes analysis of smart contract risk, permissions, transaction mechanisms, and more.
+- **Supported Networks**: Ethereum (EVM), Solana, Sui, and others.
 
-## Decentralized Data Feeds
+## 4.2 Rug Pull Detection
+- **Action**: [RUGPULL_SECURITY_CHECK]
+- **Description**: Detects potential rug pull risks in tokens or projects by analyzing contract permissions, liquidity settings, and other critical indicators.
+- **Supported Networks**: Ethereum, BSC, Solana, etc.
 
-- Leverages on-chain data and decentralized oracles to deliver up-to-date security intelligence.
+## 4.3 NFT Security Analysis
+- **Action**: [NFT_SECURITY_CHECK]
+- **Description**: Provides a security analysis of NFT projects by evaluating contract permissions, minting mechanisms, and potential trading risks.
+- **Supported Networks**: Ethereum, Polygon, Solana, etc.
 
-## Lifecycle Coverage
+## 4.4 Address Security Monitoring
+- **Action**: [ADRESS_SECURITY_CHECK]
+- **Description**: Monitors specific addresses to identify known malicious addresses, high-risk addresses, or scam addresses across supported blockchains.
 
-- Protects the full transaction lifecycle, from asset issuance (via SafeToken Protocol) to transaction monitoring (via GoPlus Intelligence).
+## 4.5 Approval Security Checks
+- **Action**: [APPROVAL_SECURITY_CHECK], [ACCOUNT_ERC20_SECURITY_CHECK], [ACCOUNT_ERC721_SECURITY_CHECK], [ACCOUNT_ERC1155_SECURITY_CHECK]
+- **Description**: Evaluates and monitors contract authorizations to prevent risky approvals of third-party transactions.
+- **Supported Tokens**: ERC20, ERC721, ERC1155.
 
-# Functional Specifications
+## 4.6 Phishing Detection
+- **Action**: [URL_SECURITY_CHECK]
+- **Description**: Detects phishing websites by analyzing URLs for known malicious patterns.
 
-## Core Security Features
+# 5. Security Framework
 
-### Token Security Detection
+- **Decentralized Security Model**: Built upon GoPlus' decentralized security network, ensuring security is omnipresent throughout the Web3 ecosystem. This model leverages the scalability of decentralized security across all transaction types.
+- **Continuous Monitoring**: The plugin allows AI agents to continuously monitor risk factors, flagging any dangerous activities in real-time.
+- **Risk Mitigation**: Upon detecting risks, AI agents can autonomously take corrective actions like revoking permissions, blocking malicious tokens, or sending alerts to users about potential threats.
 
-- Uses AI analytics and heuristics to identify risky or malicious tokens.
+# 6. Use Cases
 
-### NFT Security Detection
+## 6.1 Trading and Investment
+- **Automatic Token Screening**: The plugin will automatically scan tokens before initiating trades or investments to assess their risk level.
+- **Rug Pull Detection**: If a potential rug pull is detected, the AI agent can warn users or automatically prevent transactions.
 
-- Analyzes smart contracts and NFT metadata to detect vulnerabilities.
+## 6.2 Asset Management
+- **Risk Monitoring**: The plugin ensures that authorized contracts and token holdings are continuously monitored for new risks or unauthorized changes.
+- **Revocation and Alerts**: The AI agent can autonomously revoke permissions for risky contracts or warn users about potential security issues.
 
-### Phishing Website Detection
+## 6.3 Community Management
+- **Phishing Link Detection**: The AI agent will automatically remove phishing links from community channels, safeguarding participants from malicious websites.
+- **Project Safety Alerts**: Alerts users about high-risk projects or trending scams within the community.
 
-- Prevents interactions with known phishing domains through dynamic threat intelligence.
+# 7. Deployment and Configuration
 
-### Malicious Authorization and Signature Detection
+## 7.1 Service Initialization
+- The plugin will be initialized with the GoPlus API key, which is required for authenticating security requests. The AI agent runtime will handle the API key securely, ensuring no leaks of sensitive information.
 
-- Monitors and assesses authorization transactions and digital signatures to flag high-risk activities.
-
-## Cross-Chain Compatibility
-
-### Network Support
-
-- Consistent security analysis and risk assessment across over 30 blockchain networks.
-
-# Application Use Cases
-
-## Trading and Investment
-
-- Automates token screening before transactions.
-- Provides real-time risk assessments for liquidity pools and yield farming.
-
-## Asset Management
-
-- Monitors authorized contracts and automatically revokes permissions for suspicious activities.
-
-## Community Management
-
-- Filters phishing links and issues alerts to protect community members from scams.
-
-# GoPlus Security Integration
-
-## Decentralized Security Layer
-
-- Delivers comprehensive, user-driven security protection throughout the transaction lifecycle.
-
-## Performance Metrics
-
-- Supports over 30 blockchain networks.
-- Powers real-time threat detection with millions of daily API calls, securing millions of wallets and detecting hundreds of thousands of malicious assets.
-
-## Collaborative Approach
-
-- Enhances focEliza's plug-in with GoPlus's proven, AI-powered security infrastructure, ensuring safer and more reliable AI agent interactions in Web3.
+## 7.2 Integration with FocEliza
+- The GoPlus Security plugin integrates seamlessly into the FocEliza environment, where it can be called directly by AI agents within FocEliza's architecture. The plugin is accessible as a service in the agent's runtime, making security checks a core part of its operations.
